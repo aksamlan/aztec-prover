@@ -1,4 +1,3 @@
-````markdown
 # 🛡️ Nœud Prover Aztec - Guide de Déploiement
 
 Bienvenue ! Ce guide vous accompagne pas à pas dans l'installation et l'exploitation d'un **nœud Prover Aztec** sur le réseau de test public alpha. En tant que Prover, votre machine contribuera activement à la génération de preuves ZK assurant l'intégrité des rollups — un pilier fondamental de la sécurité du protocole Aztec.
@@ -19,6 +18,7 @@ Bienvenue ! Ce guide vous accompagne pas à pas dans l'installation et l'exploit
 > ⚠️ En dessous de ces spécifications, des erreurs de type  
 > `Epoch proving failed: Proving cancelled` sont probables.
 
+---
 
 ## 🚀 Mise en Route
 
@@ -28,7 +28,7 @@ Bienvenue ! Ce guide vous accompagne pas à pas dans l'installation et l'exploit
 sudo apt update && sudo apt upgrade -y
 sudo apt install -y curl build-essential wget lz4 automake autoconf \
   tmux htop pkg-config libssl-dev tar unzip
-````
+```
 
 ---
 
