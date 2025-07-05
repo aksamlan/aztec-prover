@@ -81,6 +81,16 @@ sudo ufw allow 40400/udp
 sudo ufw --force enable
 ```
 
+### 🔗 RPC via Chainstack
+
+Si vous n’avez pas encore de point de terminaison RPC Ethereum, vous pouvez en obtenir un via [Chainstack](https://chainstack.com/) :
+
+* Inscrivez-vous gratuitement
+* Créez un projet Ethereum (Sépolia)
+* Copiez l’URL HTTPS RPC
+
+🔧 Collez cette URL dans la variable `ETHEREUM_HOSTS` ci-dessous :
+
 ---
 
 ### 5. Préparer l’environnement
@@ -89,17 +99,16 @@ sudo ufw --force enable
 mkdir ~/prover && cd ~/prover
 ```
 
-Créer un fichier `.env` :
+Créez un fichier `.env` :
 
 ```
 P2P_IP=<IP_PUBLIQUE_DU_SERVEUR>
-ETHEREUM_HOSTS=<URL_RPC_EXECUTION>
+ETHEREUM_HOSTS=https://nd-<votre-id>.chainstacklabs.com    # depuis Chainstack
 L1_CONSENSUS_HOST_URLS=<URL_RPC_CONSENSUS>
 PROVER_PUBLISHER_PRIVATE_KEY=0x<VOTRE_CLÉ_PRIVÉE>
 PROVER_ID=0x<VOTRE_ADRESSE_WALLET>
 ```
 
----
 
 ### 6. Déployer via `docker-compose`
 
